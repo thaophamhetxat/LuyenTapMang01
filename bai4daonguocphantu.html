@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let p = [];
+    let sl = +prompt('nhập vào số lượng phần tử');
+    for(let i=0;i<sl;i++){
+        p = +prompt('nhập vào phần tử thứ');
+    }
+    let first=0;
+    let last = sl.length -1;
+    while (first < last){
+        let b = p[first];
+        p[first]=p[last];
+        p[last]=b;
+        first =first+1;
+        last--;
+
+    }document.write(p);
+
+</script>
+</body>
+</html>
